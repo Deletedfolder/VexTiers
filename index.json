@@ -385,6 +385,14 @@
       "tiers": [
         "LT1 Mace"
       ]
+    },
+    {
+      "name": "Oudaczwhynot",
+      "region": "EU",
+      "points": 30,
+      "tiers": [
+        "HT2 Mace"
+      ]
     }
   ]
 }
