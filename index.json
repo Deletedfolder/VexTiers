@@ -352,5 +352,15 @@
         "AXE HT5"
       ]
     }
+  ],
+  "Mace": [
+    {
+      "name": "Vexilz_",
+      "region": "EU",
+      "points": 60,
+      "tiers": [
+        "HT1 Mace"
+      ]
+    }
   ]
 }
