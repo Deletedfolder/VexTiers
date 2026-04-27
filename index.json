@@ -299,6 +299,14 @@
       "tiers": [
         "LT3 Axe"
       ]
+    },
+    {
+      "name": "Cristianlibardo",
+      "region": "EU",
+      "points": 4,
+      "tiers": [
+        "HT4 Axe"
+      ]
     }
   ]
 }
