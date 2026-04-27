@@ -11,7 +11,7 @@
   ],
   "Sword": [
     {
-      "name": "Mrgrayy",
+      "name": "Mr_grayy",
       "region": "EU",
       "points": 60,
       "tiers": [
@@ -19,11 +19,11 @@
       ]
     },
     {
-      "name": "Mr_grayy",
+      "name": "Fobakk",
       "region": "EU",
-      "points": 60,
+      "points": 45,
       "tiers": [
-        "HT1 Sword"
+        "LT1 Sword"
       ]
     }
   ]
