@@ -202,5 +202,15 @@
         "HT1 Pot"
       ]
     }
+  ],
+  "Axe": [
+    {
+      "name": "Vexilz_",
+      "region": "EU",
+      "points": 60,
+      "tiers": [
+        "HT1 Axe"
+      ]
+    }
   ]
 }
