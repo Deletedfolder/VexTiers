@@ -63,6 +63,14 @@
       "tiers": [
         "LT2 Mace"
       ]
+    },
+    {
+      "name": "MR_sl0th",
+      "region": "EU",
+      "points": 20,
+      "tiers": [
+        "LT2 Mace"
+      ]
     }
   ],
   "Sword": [
