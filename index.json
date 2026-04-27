@@ -420,5 +420,15 @@
         "LT5 Axe"
       ]
     }
+  ],
+  "UHC": [
+    {
+      "name": "Vexilz_",
+      "region": "EU",
+      "points": 60,
+      "tiers": [
+        "HT1 UHC"
+      ]
+    }
   ]
 }
