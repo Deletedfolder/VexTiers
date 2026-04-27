@@ -25,19 +25,19 @@
       ]
     },
     {
-      "name": "Dvrkkness",
-      "region": "EU",
-      "points": 45,
-      "tiers": [
-        "LT1 Sword"
-      ]
-    },
-    {
       "name": "Mrsl0th",
       "region": "EU",
       "points": 30,
       "tiers": [
         "HT2 Sword"
+      ]
+    },
+    {
+      "name": "Dvrkkness",
+      "region": "EU",
+      "points": 60,
+      "tiers": [
+        "HT1 Sword"
       ]
     }
   ],
