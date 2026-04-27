@@ -166,7 +166,7 @@ input {
   <h1>Vextiers Rankings</h1>
   <div id="tabs" class="tabs"></div>
   <input id="search" placeholder="Search for a player name...">
-  <div id="players"></div>
+  <div id="players">Loading rankings...</div>
 </div>
 
 <div id="playerModal" class="modal hidden">
@@ -179,30 +179,27 @@ input {
 <script>
 const tabs = ["Overall", "Vanilla", "UHC", "Pot", "SMP", "Sword", "Axe", "Mace", "Diamond SMP", "NethPot", "Cart PvP", "Creeper", "Bridge", "Bow"];
 let currentTab = "Overall";
-
-// Data
-const playersData = {
-  Sword: [
-    { name: "Vexilz_", region: "EU", points: 200, tiers: ["HT1 Sword"] },
-    { name: "MR_sl0th", region: "EU", points: 150, tiers: ["LT1 Sword"] },
-    { name: "Mr_grayy", region: "EU", points: 100, tiers: ["HT2 Sword"] }
-  ],
-  Pot: [
-    { name: "Vexilz_", region: "EU", points: 300, tiers: ["HT1 Pot"] },
-    { name: "Mr_grayy", region: "EU", points: 150, tiers: ["LT1 Pot"] }
-  ],
-  UHC: [
-    { name: "Vexilz_", region: "EU", points: 205, tiers: ["LT1 UHC"] }
-  ]
-};
+let playersData = {}; // Now empty, will be filled from index.json
 
 const playersDiv = document.getElementById("players");
 const searchInput = document.getElementById("search");
 const modal = document.getElementById("playerModal");
 document.getElementById("closeModal").onclick = () => modal.classList.add("hidden");
 
+// NEW: Function to fetch the bot's data
+async function fetchRankings() {
+    try {
+        const response = await fetch('index.json');
+        playersData = await response.json();
+        renderTabs();
+        render();
+    } catch (e) {
+        playersDiv.innerHTML = "Error loading rankings. Make sure index.json exists!";
+        console.error(e);
+    }
+}
+
 function openPlayerModal(p, rank) {
-  // Generate Tier Badges
   const tagsHtml = p.tiers.map(t => `<span class="tag-big">${t}</span>`).join("");
   
   document.getElementById("modalBody").innerHTML = `
@@ -253,6 +250,11 @@ function render() {
   displayPlayers.sort((a, b) => b.points - a.points);
   playersDiv.innerHTML = "";
 
+  if (displayPlayers.length === 0) {
+      playersDiv.innerHTML = "<div style='text-align:center; color:#888;'>No players ranked in this category yet.</div>";
+      return;
+  }
+
   if (currentTab === "Overall") {
     displayPlayers.forEach((p, i) => {
       const rank = i + 1;
@@ -276,10 +278,9 @@ function render() {
       playersDiv.appendChild(div);
     });
   } else {
-    // GAMEMODE GRID
     const groups = { 1: [], 2: [], 3: [], 4: [], 5: [] };
     displayPlayers.forEach(p => {
-      const match = p.tiers[0].match(/T(\d)/);
+      const match = p.tiers[0].match(/[LT|HT](\d)/); // Matches both LT1 and HT1
       if (match) groups[match[1]].push(p);
     });
 
@@ -303,8 +304,9 @@ function render() {
   }
 }
 
-renderTabs();
-render();
+// Initial Load
+fetchRankings();
+searchInput.oninput = render;
 </script>
 </body>
 </html>
