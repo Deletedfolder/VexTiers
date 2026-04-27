@@ -369,6 +369,14 @@
       "tiers": [
         "HT1 Mace"
       ]
+    },
+    {
+      "name": "SuperSonic2013",
+      "region": "EU",
+      "points": 45,
+      "tiers": [
+        "LT1 Mace"
+      ]
     }
   ]
 }
