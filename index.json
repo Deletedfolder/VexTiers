@@ -387,14 +387,6 @@
       ]
     },
     {
-      "name": "amjust",
-      "region": "AF",
-      "points": 30,
-      "tiers": [
-        "HT2 Mace"
-      ]
-    },
-    {
       "name": "J4umpx",
       "region": "EU",
       "points": 20,
@@ -421,6 +413,14 @@
     {
       "name": "SnowMonsterSCY",
       "region": "EU",
+      "points": 30,
+      "tiers": [
+        "HT2 Mace"
+      ]
+    },
+    {
+      "name": "amjust",
+      "region": "AF",
       "points": 30,
       "tiers": [
         "HT2 Mace"
