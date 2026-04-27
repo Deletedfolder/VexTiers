@@ -31,6 +31,14 @@
       "tiers": [
         "LT1 Mace"
       ]
+    },
+    {
+      "name": "Oudaczwhynot",
+      "region": "EU",
+      "points": 39,
+      "tiers": [
+        "HT2 Mace"
+      ]
     }
   ],
   "Sword": [
