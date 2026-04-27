@@ -55,6 +55,14 @@
       "tiers": [
         "LT1 Sword"
       ]
+    },
+    {
+      "name": "Kapitiny",
+      "region": "EU",
+      "points": 45,
+      "tiers": [
+        "HT2 Sword"
+      ]
     }
   ],
   "Pot": [
