@@ -97,6 +97,14 @@
       "tiers": [
         "LT2 Sword"
       ]
+    },
+    {
+      "name": "SnowMonsterSCY",
+      "region": "EU",
+      "points": 20,
+      "tiers": [
+        "LT2 Sword"
+      ]
     }
   ]
 }
