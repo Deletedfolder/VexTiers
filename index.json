@@ -251,6 +251,14 @@
       "tiers": [
         "LT2 Axe"
       ]
+    },
+    {
+      "name": "J4umpx",
+      "region": "EU",
+      "points": 10,
+      "tiers": [
+        "HT3 Axe"
+      ]
     }
   ]
 }
