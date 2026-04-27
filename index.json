@@ -316,5 +316,15 @@
         "HT4 Axe"
       ]
     }
+  ],
+  "LT5": [
+    {
+      "name": "mustardslasher1",
+      "region": "EU",
+      "points": 1,
+      "tiers": [
+        "AXE LT5"
+      ]
+    }
   ]
 }
