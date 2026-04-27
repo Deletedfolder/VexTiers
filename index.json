@@ -167,6 +167,14 @@
       "tiers": [
         "HT4 Sword"
       ]
+    },
+    {
+      "name": "Eedgsping",
+      "region": "EU",
+      "points": 3,
+      "tiers": [
+        "LT4 Sword"
+      ]
     }
   ],
   "Pot": [
